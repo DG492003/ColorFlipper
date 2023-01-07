@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ColorFlipper || SIMPLE</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="colour.png" type="image/x-icon" />
+
+    <!-- inline css contains media query  -->
+    <style>
+      @media screen and (max-width: 760px) {
+        .backgroundColor p,
+        span {
+          font-size: 1rem;
+        }
+        .navlists li {
+          font-size: 1rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }
+        #btn {
+          font-size: 0.5rem;
+        }
+      }
+      @media screen and (max-width: 410px) {
+        .backgroundColor p,
+        span {
+          font-size: 0.5rem;
+        }
+        .navlists li {
+          font-size: 0.5rem;
+        }
+        h2 {
+          font-size: 1.1rem;
+        }
+        #btn {
+          font-size: 0.4rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <div class="navbar">
+      <nav class="navigationBar">
+        <h2>Color Flipper</h2>
+        <ul class="navlists">
+          <li><a href="index.html" title="Color Name">SIMPLE</a></li>
+          <li><a href="hex.html" title="Hex Value">HEX</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- main body where changes is apply -->
+    <main class="backgroundColor">
+      <p>
+        Background color :
+        <span>rgb(255,255,255)</span>
+      </p>
+      <button id="btn">Click To Randomise Background</button>
+    </main>
+
+    <!-- js is attached here!! -->
+    <script src="index.js"></script>
+  </body>
+</html>

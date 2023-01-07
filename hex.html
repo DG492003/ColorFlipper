@@ -1,0 +1,71 @@
+<!-- same code as a index.html except it call different js file named hex.js this is
+used to generate random color of background in hex format -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ColorFlipper || HEX</title>
+  </head>
+  <link rel="icon" href="colour.png" type="image/x-icon" />
+  <link rel="stylesheet" href="index.css" />
+
+  <!-- inline css for media queries  -->
+  <style>
+    @media screen and (max-width: 760px) {
+      .backgroundColor p,
+      span {
+        font-size: 1rem;
+      }
+      .navlists li {
+        font-size: 1rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      #btn {
+        font-size: 0.5rem;
+      }
+    }
+    @media screen and (max-width: 410px) {
+      .backgroundColor p,
+      span {
+        font-size: 0.5rem;
+      }
+      .navlists li {
+        font-size: 0.5rem;
+      }
+      h2 {
+        font-size: 1.1rem;
+      }
+      #btn {
+        font-size: 0.4rem;
+      }
+    }
+  </style>
+  <body>
+    <!-- navigationBar  -->
+    <div class="navbar">
+      <nav class="navigationBar">
+        <h2>Color Flipper</h2>
+        <ul class="navlists">
+          <li><a href="index.html" title="Color Name">SIMPLE</a></li>
+          <li><a href="hex.html" title="Hex Value">HEX</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- main body where changes happens -->
+    <main class="backgroundColor">
+      <p>
+        Background color :
+        <span>#ffffff</span>
+      </p>
+      <button id="btn">Click To Randomise Background</button>
+    </main>
+
+    <!-- linking hex.js file  -->
+    <script src="hex.js"></script>
+  </body>
+</html>
